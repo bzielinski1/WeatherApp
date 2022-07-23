@@ -1,0 +1,16 @@
+﻿<Page x:Class="WeatherApp.LandingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeatherApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LandingPage" Background="#FF7B91A4">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="245,105,0,0" Text="Weather App" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Rounded MT Bold"/>
+        <Button x:Name="Compare_Button" Content="Compare City" HorizontalAlignment="Left" Margin="145,275,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Compare_Click"/>
+        <Button x:Name="Finder_Button" Content="City Finder" HorizontalAlignment="Left" Margin="500,275,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Find_Click"/>
+
+    </Grid>
+</Page>

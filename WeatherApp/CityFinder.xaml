@@ -1,0 +1,20 @@
+﻿<Page x:Class="WeatherApp.CityFinder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeatherApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CityFinder" Background="#FF7B91A4">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="270,105,0,0" Text="City Finder" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="345,232,0,0" Text="Max Temp" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal"/>
+        <TextBox x:Name="maxTemp" HorizontalAlignment="Left" Margin="410,230,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" />
+        <TextBlock HorizontalAlignment="Left" Margin="345,262,0,0" Text="Min Temp" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontWeight="Normal"/>
+        <TextBox x:Name="minTemp" HorizontalAlignment="Left" Margin="410,260,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" />
+        <Button Content="Enter" HorizontalAlignment="Left" Margin="355,312,0,0" VerticalAlignment="Top" Width="100" Height="30" FontFamily="Arial Rounded MT Bold" Click="Button_Click"/>
+
+    </Grid>
+</Page>

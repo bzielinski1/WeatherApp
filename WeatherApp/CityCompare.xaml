@@ -1,0 +1,31 @@
+﻿<Page x:Class="WeatherApp.CityCompare"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeatherApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CityCompare" Background="#FF7B91A4">
+
+    <Grid>
+        <TextBlock Text="City Compare" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" FontFamily="Arial Rounded MT Bold" />
+        <ComboBox x:Name="City1" HorizontalAlignment="Left" Margin="140,250,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="City2" HorizontalAlignment="Left" Margin="500,250,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Button x:Name="CompareButton" Content="Compare" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" Width="100" Height="25" Click="CompareButton_Click"/>
+    </Grid>
+</Page>
